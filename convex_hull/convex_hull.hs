@@ -42,11 +42,3 @@ main = do points <- map parsePoint . tail . lines <$> getContents
           let p:rest = DL.sortBy (comparing snd) points
           let r = solve points
           printf "%.1f\n" r
-
-
-
-
-
-
-
-
