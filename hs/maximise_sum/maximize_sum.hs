@@ -21,7 +21,6 @@ run t inp = do
   C8.putStrLn (C8.pack (show r))
   run (t-1) inp''
 
-
 insert :: Integer -> MultiSet -> MultiSet
 insert x ms = M.insertWith (+) x 1 ms
 
